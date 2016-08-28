@@ -1,22 +1,22 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
 
-import './main.html';
+import angular from 'angular';
+import angularMeteor from 'angular-meteor';
+angular.module('outr', [
+  angularMeteor
+])
+.component('shoutsList', {
+  templateUrl: 'client/shoutsList.html',
+  controllerAs: 'shoutsList',
+  controller($scope, $reactive) {
+  'ngInject';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
+  $reactive(this).attach($scope);
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
+  this.helpers({
+    shouts() {
+      return Shouts.find({});
+    }
+  });
+}
 
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
 });
