@@ -1,3 +1,7 @@
+import { Meteor } from 'meteor/meteor';
+
+import { Shouts } from '../imports/api/shouts';
+
 Meteor.startup(() => {
   if (Shouts.find().count() === 0) {
     const shouts = [{

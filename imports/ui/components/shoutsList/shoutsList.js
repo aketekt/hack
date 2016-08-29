@@ -2,6 +2,8 @@ import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 
 import template from './shoutsList.html';
+import { Shouts } from '../../../api/shouts';
+import { name as ShoutAdd } from '../shoutAdd/shoutAdd';
 
 class ShoutsList {
   constructor($scope, $reactive) {
@@ -22,8 +24,8 @@ const name = 'shoutsList';
 // create a module
 
 export default angular.module(name, [
-  angularMeteor
-
+  angularMeteor,
+  ShoutAdd
 ]).component(name, {
   template,
   controllerAs: name,
