@@ -1,8 +1,8 @@
 <shout-add></shout-add>
-
-<ul>
-  <div ng-repeat="shout in shoutsList.shouts">
+<div id="feed">
+  <h2>All Shouts</h2>
+  <div class="shout" ng-repeat="shout in shoutsList.shouts | orderBy:'time':true">
     <p>{{shout.content}}</p>
     <p>{{shout.location}}</p>
   </div>
-</ul>
+</div>

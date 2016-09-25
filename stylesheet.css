@@ -1,0 +1,88 @@
+body {margin:0; font-family: 'Lato', sans-serif;}
+  h1 {font-size: 70px;}
+  h2 {color:white;
+    text-align: center;}
+  a {text-decoration: none;}
+#above-fold {
+  line-height: 15em;
+  background: transparent url('api.png') no-repeat; min-width: 1024px;}
+  #headline {
+      padding: 1px;
+      height: 605px;
+
+      color: white;
+      display: inline;
+      text-align: center;
+  }
+#after-fold {
+  height: 705px;
+}
+  .submitButton {
+    padding:0 10px 0 10px;
+    height: 1.4em;
+  color: #68C7F0;
+  font-size: 50px;
+  border-radius: 4px;
+  border-color:white;
+  border-style: solid;;
+  background-color: white;
+  width: 2.9em;
+  font-weight: bold;
+  margin-left: 0.1em;
+}
+.submitButton:active {
+    border-color: #68C7F0;
+}
+.submitButton:hover {
+  color: #2887B0;
+  font-style: oblique;
+}
+.welcomeBar {
+height: 2.51em;
+width: 25em;
+color: white;
+font-size: 18px;
+padding: 10px;
+border-radius: 4px;
+border-color: #68C7F0;
+border-style: solid;
+overflow: hidden;
+font-weight: bold;
+border-width: 2px;
+background: none;
+}
+.welcomeBar:hover {
+  background-color: white;
+  color: #2887B0;
+  border-color: white;
+}
+.welcomeBar:focus {
+background-color: white;
+color: #2887B0;
+border-color: #68C7F0;
+}
+#feed {
+  margin: auto;
+  height: 705px;
+  width: 33%;
+  overflow: hidden;
+  background-color: #68C7F0;
+  border-color: white;
+  border-radius: 4px;
+  border-top-style: solid;
+  overflow-y: scroll;
+}
+
+.shout {
+  background-color: white;
+  width: 94%;
+  height: 2.51em;
+  color: #2887B0;
+  border-style: solid;
+  border-color: white;
+  margin: 1px;
+  border-width: thin;
+  padding: 0.5em;
+  overflow: hidden;
+
+}
