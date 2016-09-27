@@ -5,11 +5,10 @@ body {margin:0; font-family: 'Lato', sans-serif;}
   a {text-decoration: none;}
 #above-fold {
   line-height: 15em;
-  background: transparent url('api.png') no-repeat; min-width: 1024px;}
+  background: transparent url('api.png') no-repeat;}
   #headline {
       padding: 1px;
       height: 605px;
-
       color: white;
       display: inline;
       text-align: center;
@@ -30,16 +29,13 @@ body {margin:0; font-family: 'Lato', sans-serif;}
   font-weight: bold;
   margin-left: 0.1em;
 }
-.submitButton:active {
-    border-color: #68C7F0;
-}
 .submitButton:hover {
   color: #2887B0;
   font-style: oblique;
 }
 .welcomeBar {
 height: 2.51em;
-width: 25em;
+width: 35%;
 color: white;
 font-size: 18px;
 padding: 10px;
@@ -62,6 +58,7 @@ color: #2887B0;
 border-color: #68C7F0;
 }
 #feed {
+  min-width: 15em;
   margin: auto;
   height: 705px;
   width: 33%;
@@ -74,9 +71,10 @@ border-color: #68C7F0;
 }
 
 .shout {
+  white-space: pre-line;
+  word-wrap: break-word;
   background-color: white;
-  width: 94%;
-  height: 2.51em;
+  width: auto;
   color: #2887B0;
   border-style: solid;
   border-color: white;
@@ -84,5 +82,7 @@ border-color: #68C7F0;
   border-width: thin;
   padding: 0.5em;
   overflow: hidden;
-
+}
+.shout:hover {
+  background-color: #FAFDFF;
 }
