@@ -1,8 +1,14 @@
 <shout-add></shout-add>
+<div id="after-fold">
+  <form class="center">
+    <textarea class="welcomeBar" type="text" ng-model="shoutAdd.shout.content"></textarea>
+    <!-- <input type="text" class="welcomeBar"ng-model="shoutAdd.shout.location" /> -->
+    <a href="/test"><button class="submitButton" ng-click="shoutAdd.submit()">oUTr</button></a>
+  </form>
 <div id="feed">
-  <h2>All Shouts</h2>
   <div class="shout" ng-repeat="shout in shoutsList.shouts | orderBy:'time':true">
     <p>{{shout.content}}</p>
     <p>{{shout.location}}</p>
   </div>
+</div>
 </div>

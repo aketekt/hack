@@ -1,20 +1,27 @@
-body {margin:0; font-family: 'Lato', sans-serif;}
+
+html {
+  height: 100%;
+}
+body {margin:0;  font-family: 'Lato', sans-serif; height: 100%;}
   h1 {font-size: 70px;}
   h2 {color:white;
     text-align: center;}
   a {text-decoration: none;}
 #above-fold {
-  line-height: 15em;
-  background: transparent url('api.png') no-repeat;}
+  background: transparent url('apiF.png') no-repeat; background-position: center;
+  height: 100%;
+}
   #headline {
       padding: 1px;
-      height: 605px;
       color: white;
       display: inline;
       text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 42.5%;
   }
 #after-fold {
-  height: 705px;
+  background-color: #FAFDFF;
 }
   .submitButton {
     padding:0 10px 0 10px;
@@ -61,13 +68,7 @@ border-color: #68C7F0;
   min-width: 15em;
   margin: auto;
   height: 705px;
-  width: 33%;
-  overflow: hidden;
-  background-color: #68C7F0;
-  border-color: white;
-  border-radius: 4px;
-  border-top-style: solid;
-  overflow-y: scroll;
+  width: 50%;
 }
 
 .shout {
@@ -77,7 +78,8 @@ border-color: #68C7F0;
   width: auto;
   color: #2887B0;
   border-style: solid;
-  border-color: white;
+  border-bottom: none;
+  border-color: #2887B0;
   margin: 1px;
   border-width: thin;
   padding: 0.5em;
